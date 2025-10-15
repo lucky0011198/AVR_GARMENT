@@ -1,11 +1,26 @@
 [
   {
-    "id":"10001",
-    "header":"Cover page",
-    "type":"Cover page",
-    "status":"Done",
-    "target":"100",
-    "limit":"100",
-    "reviewer":"John Doe"
+    "id":1,
+    "party_name":"name",
+    "Items":[
+      {
+        "id":"10001",
+        "name":"panjabi",
+        "recived":"8000m",
+        "cuttting":"1000m",
+        "sizes":["34:10","34:12","34:14"],
+        "user":[{"name":"user1","id":"1"},{"name":"user2","id":"2"},{"name":"user3","id":"3"}],
+        "collected":"3000:200"
+      },
+      {
+        "id":"10001",
+        "name":"pinako",
+        "recived":"8000m",
+        "cuttting":"1000m",
+        "sizes":["34:10","34:12","34:14"],
+        "user":[{"name":"user1","id":"1"},{"name":"user2","id":"2"},{"name":"user3","id":"3"}],
+        "collected":"3000:200"
+      }
+    ]
   }
 ]
