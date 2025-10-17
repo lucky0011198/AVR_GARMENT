@@ -1,0 +1,1 @@
+// EditableTextarea component placeholder
