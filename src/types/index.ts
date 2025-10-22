@@ -6,7 +6,7 @@ export interface User {
   id: string;
 }
 
-export interface Item {
+export interface item {
   _internalId: string;
   id: string;
   name: string;
@@ -24,7 +24,7 @@ export interface Item {
 export interface Party {
   id: number;
   party_name: string;
-  Items: Item[];
+  items: item[];
 }
 
 export interface ColumnVisibility {

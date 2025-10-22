@@ -17,12 +17,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import {
-  getPartyByIdAtom,
-  partyNamesAtom,
-  setPartyByIdAtom,
-} from "@/atom/partyAtom";
-import { useAtom, useAtomValue, useSetAtom } from "jotai";
+
 
 export type Framework = {
   value: string;
@@ -49,8 +44,8 @@ export default function TodoListView({
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
   const [inputValue, setInputValue] = React.useState("");
-  const setPartyById = useSetAtom(setPartyByIdAtom);
-  const getPartyById = useAtomValue(getPartyByIdAtom);
+  // const setPartyById = useSetAtom(setPartyByIdAtom);
+  // const getPartyById = useAtomValue(getPartyByIdAtom);
 
   const [frameworks, setFrameworks] = React.useState<Framework[]>(
     type == "item" ? PartyItems : defaultFrameworks
@@ -61,14 +56,14 @@ export default function TodoListView({
     setOpen(false);
   };
 
-  React.useEffect(() => {
-    const party = getPartyById(1);
-    if (!party) return;
-    setPartyById({
-      partyId: 1,
-      updatedParty: { ...party, party_name: value },
-    });
-  }, [value]);
+  // React.useEffect(() => {
+  //   const party = getPartyById(1);
+  //   if (!party) return;
+  //   setPartyById({
+  //     partyId: 1,
+  //     updatedParty: { ...party, party_name: value },
+  //   });
+  // }, [value]);
 
   const handleAddNew = () => {
     if (!inputValue.trim()) return;
